@@ -1,5 +1,140 @@
-// ...............................Global Style..................
+// .....................Global Settings .............
 * {
   box-sizing: border-box;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-// ...............................Global Style..................End
+@font-face {
+  font-family: hubby_bunny;
+  src: url("./Static/fonts/HUBBY_BUNNY.ttf");
+}
+
+:root {
+  // default font for rem
+  font-size: 10px;
+
+  // text color variable
+  --text-white: #fff;
+  --text-black: #000;
+  --text-30: #132130;
+  --text-7a: #eedb7a;
+  --text-58: #ead258;
+  --text-af: #93a3af;
+  --text-2f: #13212f;
+  --text-4d: #e8cf4d;
+  --text-21: #021521;
+  --text-a7: #5b89a7;
+  --text-67: #184867;
+  --text-48: #113248;
+  --text-d9: #d9d9d9;
+  --text-57: #074457;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: var(--text-21);
+}
+// .....................Global Settings .............End
+
+// ...................Section Styles .................
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  .section_title {
+    text-align: center;
+    background: linear-gradient(
+      90deg,
+      transparent 0,
+      #eedb7a 25%,
+      #eedb7a 75%,
+      transparent
+    );
+    color: var(--text-21);
+    font-size: 4rem;
+    font-weight: 700;
+    @media (max-width: 600px) {
+      font-size: 3rem;
+      padding: 0.3rem;
+    }
+    &.mt_section {
+      margin-top: 8rem;
+      @media (max-width: 600px) {
+        margin-top: 5rem;
+      }
+    }
+  }
+  .title_secondary {
+    text-align: center;
+    color: var(--text-7a);
+    font-size: 4rem;
+    font-weight: 700;
+    @media (max-width: 600px) {
+      font-size: 3rem;
+    }
+  }
+  .section_body {
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    @media (max-width: 600px) {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+    }
+  }
+}
+// ...................Section Styles .................End
+
+// ...............custom button ................
+.btn_secondary {
+  background: var(--text-7a) !important;
+  color: var(--text-black) !important;
+  font-family: hubby_bunny;
+  padding: 0.375em 0.75em;
+  border-radius: 6px;
+  @media (max-width: 600px) {
+    padding: 0.1em 0.3em;
+  }
+  &:hover {
+    background: var(--text-58) !important;
+  }
+}
+
+.btn_primary {
+  background: var(--text-67) !important;
+  color: var(--text-white) !important;
+  font-family: hubby_bunny;
+  padding: 0.375em 0.75em;
+  border-radius: 6px;
+  @media (max-width: 600px) {
+    padding: 0.1em 0.3em;
+  }
+  &:hover {
+    background: var(--text-48) !important;
+  }
+}
+// ...............custom button ................End
+
+// custom text color style.........
+.text_secondary {
+  color: var(--text-7a);
+}
+// custom text color style.........End
+
+// ..........Custom font size ...................
+.font_4 {
+  font-size: 4rem;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+// ..........Custom font size ...................End
+// responsive class
+@media (min-width: 992px) {
+  .position-lg-relative {
+    position: relative;
+  }
+}

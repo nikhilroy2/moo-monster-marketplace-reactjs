@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=Footer.css.map */
+#Footer {
+  z-index: 100;
+  position: relative;
+}
+
+#Footer .footer_top_content {
+  border-top: 3px solid var(--text-7a);
+  padding-top: 3rem;
+  background: #132130;
+}
+
+#Footer * {
+  color: var(--text-a7);
+}
+
+#Footer .footer_logo {
+  margin-right: 2.4rem;
+}
+
+#Footer .footer_link:hover {
+  text-decoration: underline;
+}
+
+#Footer .social_list img {
+  width: 14.5rem;
+  padding-bottom: 0.25em;
+  padding-bottom: 0.25em;
+  display: inline-block;
+}
+/*# sourceMappingURL=Footer.css.map */

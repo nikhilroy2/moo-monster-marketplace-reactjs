@@ -1,0 +1,28 @@
+#Footer {
+  z-index: 100;
+  position: relative;
+  .footer_top_content {
+    border-top: 3px solid var(--text-7a);
+    padding-top: 3rem;
+    background: #132130;
+  }
+  * {
+    color: var(--text-a7);
+  }
+  .footer_logo {
+    margin-right: 2.4rem;
+  }
+  .footer_link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .social_list {
+    img {
+      width: 14.5rem;
+      padding-bottom: 0.25em;
+      padding-bottom: 0.25em;
+      display: inline-block;
+    }
+  }
+}

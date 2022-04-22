@@ -1,0 +1,45 @@
+#Header {
+  background: var(--text-30);
+  padding: 0.7rem 1rem;
+  border-bottom: 3px solid var(--text-7a);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  nav {
+    background: transparent;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    .nav_action_link {
+      color: var(--text-af);
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding-left: 1.6rem;
+      padding-right: 1.6rem;
+      &.active_nav_action {
+        color: var(--text-7a);
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .btn_app {
+      margin-left: 1.6rem;
+      font-size: 1.6rem;
+      padding: 0.375em 2em;
+      background: var(--text-7a);
+      text-transform: capitalize;
+      color: var(--text-black) !important;
+      border: none !important;
+      outline: none !important;
+      border-radius: 6px;
+      font-family: hubby_bunny;
+      color: var(--text-2f) !important;
+      &:hover {
+        background: var(--text-58);
+        color: var(--text-4d);
+      }
+    }
+  }
+}
