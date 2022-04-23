@@ -1,3 +1,34 @@
-#Staking{
-    
+#Staking {
+  .box_content {
+    background: url("../../Static/img/bg-marketplace-info.58496b5.png")
+      center/100% 100% no-repeat;
+    .box_content_body {
+      & > .box {
+        background: #021521;
+        margin: 4px 2px;
+        border-radius: 16px;
+        padding: 1em 1.25em;
+      }
+      .box_title {
+        font-size: 1.125em;
+      }
+      .box_subtitle {
+        font-size: 2.25em;
+        min-width: 20rem;
+        display: block;
+      }
+    }
+  }
+  #RewardSummary {
+    .content_wrapper {
+      background: #132130;
+      padding: 1.875em;
+      border-radius: 1.6rem;
+      .summary_img_box {
+        height: 100%;
+        background: url("../../Static/img/bg-staking-moo-earned.aefa78f.png")
+          center / 100% 100%;
+      }
+    }
+  }
 }

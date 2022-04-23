@@ -148,6 +148,10 @@ section .section_body {
   font-weight: bold;
 }
 
+.font-weight-normal {
+  font-weight: normal;
+}
+
 @media (min-width: 992px) {
   .position-lg-relative {
     position: relative;

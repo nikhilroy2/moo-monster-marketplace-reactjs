@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header(props) {
   const [pathName, setPathName] = useState("/");
@@ -76,15 +76,13 @@ function Header(props) {
                 {nav_item_list.map((v) => {
                   return (
                     <li className="nav-item" key={v.id}>
-                      <Link
+                      <NavLink
                         // activeClass="active_nav_action"
-                        className={`nav-link nav_action_link ${
-                          pathName === v.link ? "active_nav_action" : ""
-                        }`}
+                        className={(navData) => navData.isActive ? "nav-link nav_action_link active_nav_action" : "nav-link nav_action_link" }
                         to={v.link}
                       >
                         {v.name}
-                      </Link>
+                      </NavLink>
                     </li>
                   );
                 })}

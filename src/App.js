@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Base>
           <Routes>
-            <Route path="/" element={<Marketplace />}>
+            <Route exact={true} path="/" element={<Marketplace />}>
             </Route>
             <Route path="/staking" element={<Staking />}>
             </Route>
