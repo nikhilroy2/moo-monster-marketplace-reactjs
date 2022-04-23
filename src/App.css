@@ -144,6 +144,12 @@ section .section_body {
   font-size: 4rem;
 }
 
+@media (max-width: 600px) {
+  .font_4 {
+    font-size: 3rem;
+  }
+}
+
 .font-weight-bold {
   font-weight: bold;
 }

@@ -1,0 +1,48 @@
+#BuyMooModal {
+    .modal-content {
+      background: #13212f;
+      .modal-title {
+        font-size: 2.4rem;
+      }
+      .btn-close {
+        background: transparent;
+      }
+      .modal-header {
+        border-bottom: 2px solid #021521;
+        padding: 1.6rem;
+      }
+      .modal-body {
+        .modal_list {
+          li {
+          
+            button {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 6px;
+              border: 2px solid #184867;
+              background-color: #021521;
+              padding: .5em 1em;
+              font-family: hubby_bunny;
+              cursor: pointer;
+              font-size: 1.8rem;
+              color: #5b89a7;
+              &:hover {
+                border: 2px solid #eedb7a;
+                color: #eedb7a;
+              }
+              @media (max-width: 767px) {
+                padding: 0.5em 1em;
+              }
+              img {
+                width: 1.5em;
+                height: 1.5em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

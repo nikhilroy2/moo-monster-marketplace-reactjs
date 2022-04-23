@@ -132,6 +132,9 @@ section {
 // ..........Custom font size ...................
 .font_4 {
   font-size: 4rem;
+  @media (max-width: 600px){
+    font-size: 3rem;
+  }
 }
 .font-weight-bold {
   font-weight: bold;

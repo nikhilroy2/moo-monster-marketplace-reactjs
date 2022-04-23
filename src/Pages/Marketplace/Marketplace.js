@@ -72,8 +72,8 @@ const MarketplaceItems = () => {
           <div className="col-12">
             <div className="items_wrapper mb-3 mb-md-5">
               <div className="items_head mb-3 mb-md-5">
-                <div className="items_control d-flex justify-content-between">
-                  <div className="items_title">
+                <div className="items_control d-flex flex-wrap justify-content-between">
+                  <div className="items_title mb-3">
                     <img
                       style={{ height: "2.5em" }}
                       className="me-3"
@@ -84,7 +84,7 @@ const MarketplaceItems = () => {
                       254 Moo - Floor $5.00
                     </span>
                   </div>
-                  <div className="items_filter">
+                  <div className="items_filter mb-3">
                     <div className="d-flex align-items-center justify-content-center">
                       <span className="text-white family_bunny small">
                         Sort by

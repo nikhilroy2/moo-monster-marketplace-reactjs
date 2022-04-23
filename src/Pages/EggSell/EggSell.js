@@ -90,7 +90,7 @@ function EggSell(props) {
                     </li>
 
                     <li>
-                      <button className="btn_secondary border-0 outline-0 w-100 py-3 py-lg-4">
+                      <button data-mdb-toggle="modal" data-mdb-target="#wallet_open_modal" className="btn_secondary border-0 outline-0 w-100 py-3 py-lg-4">
                         Connect Wallet
                       </button>
                     </li>

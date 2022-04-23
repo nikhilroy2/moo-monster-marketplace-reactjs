@@ -49,7 +49,12 @@ function Header(props) {
             {/* Toggle button */}
             <div className="d-flex align-items-center">
               <div className="d-flex align-items-center d-lg-none me-3">
-                <button type="button" className="btn_app">
+                <button
+                  data-mdb-toggle="modal"
+                  data-mdb-target="#wallet_open_modal"
+                  type="button"
+                  className="btn_app"
+                >
                   Connect Wallet
                 </button>
               </div>
@@ -78,7 +83,11 @@ function Header(props) {
                     <li className="nav-item" key={v.id}>
                       <NavLink
                         // activeClass="active_nav_action"
-                        className={(navData) => navData.isActive ? "nav-link nav_action_link active_nav_action" : "nav-link nav_action_link" }
+                        className={(navData) =>
+                          navData.isActive
+                            ? "nav-link nav_action_link active_nav_action"
+                            : "nav-link nav_action_link"
+                        }
                         to={v.link}
                       >
                         {v.name}
@@ -87,7 +96,7 @@ function Header(props) {
                   );
                 })}
                 <li className="nav-item d-lg-none">
-                  <button type="button" className="btn_app">
+                  <button data-mdb-toggle="modal" data-mdb-target="#buy_moo_open_modal" type="button" className="btn_app">
                     <img
                       style={{ height: "24px" }}
                       src={require("../../Static/img/ic-moo-token.8d1a1ee.png")}
@@ -99,7 +108,7 @@ function Header(props) {
               </ul>
               {/* Left links */}
               <div className="d-none align-items-center d-lg-flex">
-                <button type="button" className="btn_app d-none d-lg-block">
+                <button data-mdb-toggle="modal" data-mdb-target="#buy_moo_open_modal" type="button" className="btn_app d-none d-lg-block">
                   <img
                     style={{ height: "24px" }}
                     src={require("../../Static/img/ic-moo-token.8d1a1ee.png")}
@@ -108,7 +117,12 @@ function Header(props) {
                   Buy $MOO
                 </button>
 
-                <button type="button" className="btn_app">
+                <button
+                  type="button"
+                  data-mdb-toggle="modal"
+                  data-mdb-target="#wallet_open_modal"
+                  className="btn_app"
+                >
                   Connect Wallet
                 </button>
               </div>
