@@ -1,0 +1,63 @@
+#MarketplaceItemsCard {
+  width: 18rem;
+  cursor: pointer;
+  background: #021521;
+  padding: 0px;
+  border-radius: 1.8rem;
+  margin: 0 auto;
+  .card_head {
+    width: 100%;
+    border-radius: 1.8rem;
+    height: 25rem;
+    border: 5px solid var(--border-color);
+
+    position: relative;
+    .head_img {
+      height: 100%;
+    }
+    .head_content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      .content_1 {
+        width: 64.6px;
+        height: 35px;
+        font-size: 1.6rem;
+        color: var(--text-white);
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        .name {
+          font-size: 1.6rem;
+          margin-top: 1rem;
+          margin-right: 0.3rem;
+          font-weight: bold;
+        }
+        .count {
+          font-size: 3.2rem;
+          font-weight: bold;
+        }
+      }
+      .content_2 {
+        .content_2_rating {
+          svg {
+            width: 1.7rem;
+            height: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+  .card_body {
+    name {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    .value {
+      font-size: 1.2rem;
+    }
+  }
+}

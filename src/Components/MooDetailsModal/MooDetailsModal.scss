@@ -1,0 +1,99 @@
+#MooDetailsModal {
+  .modal-content {
+    background: #13212f;
+    .modal-title {
+      font-size: 2.4rem;
+    }
+    .btn-close {
+      background: transparent;
+    }
+    .modal-header {
+      border-bottom: 2px solid #021521;
+      padding: 1.6rem;
+    }
+    .modal-body {
+      @media (min-width: 992px) {
+        display: flex;
+      }
+      .current_items {
+        min-width: 18rem;
+      }
+      .item_details {
+        flex-grow: 1;
+        padding: 1rem;
+        .details_head {
+          .coin-box {
+            background-color: #021521;
+            border-radius: 10px;
+            padding: 0.5em 1em;
+            display: inline-block;
+          }
+          .evolution_wrapper {
+            display: flex;
+
+            & > * {
+              width: 2.875em;
+              height: 2.875em;
+              overflow: hidden;
+              border-style: solid;
+              border-width: 3px;
+              border-radius: 12px;
+              position: relative;
+            }
+            .element-earth {
+              background: linear-gradient(180deg, #3d2f29, #855f36);
+              border-color: #60402f;
+              .icon-lock {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                left: 0px;
+                top: 0px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+        .details_body {
+          .details_body_list {
+            .list_wrapper {
+              border-radius: 10px;
+              border: 2px solid #184867;
+              background-color: #021521;
+              font-size: 0.75em;
+              margin-bottom: 1em;
+              .nesting_title {
+                font-size: 0.75em;
+              }
+              .food_list {
+                li {
+                  width: 4em;
+                  height: 4em;
+                  border: 4px solid #1a3650;
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 6px;
+                  background: radial-gradient(#3f5b7c, #16212e 75%);
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                  .list_count {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 5px;
+                    font-size: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

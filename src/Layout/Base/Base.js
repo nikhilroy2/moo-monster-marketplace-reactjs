@@ -4,6 +4,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ConnectWalletModal from "../../Components/ConnectWalletModal/ConnectWalletModal";
 import BuyMooModal from "../../Components/BuyMooModal/BuyMooModal";
+import MooDetailsModal from "../../Components/MooDetailsModal/MooDetailsModal";
+import BuyMooConfirmModal from "../../Components/BuyMooConfirmModal/BuyMooConfirmModal";
 function Base(props) {
   return (
     <div id="Base">
@@ -14,6 +16,8 @@ function Base(props) {
       {/* modal here */}
       <ConnectWalletModal />
       <BuyMooModal />
+      <MooDetailsModal />
+      <BuyMooConfirmModal />
     </div>
   );
 }

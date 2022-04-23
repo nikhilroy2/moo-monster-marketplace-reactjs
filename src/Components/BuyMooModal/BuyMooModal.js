@@ -28,8 +28,10 @@ function BuyMooModal(props) {
                 className="btn-close"
                 data-mdb-dismiss="modal"
                 aria-label="Close"
-              />{" "}
-              <i className="fas fa-times text-white   "></i>
+              >
+                {" "}
+                <i className="fas fa-times text-white   "></i>{" "}
+              </button>
             </div>
             <div className="modal-body">
               <ul className="list-unstyled modal_list d-flex flex-wrap justify-content-between">

@@ -1,0 +1,56 @@
+#BuyMooConfirmModal {
+  .modal-content {
+    background: #13212f;
+    .modal-title {
+      font-size: 2.4rem;
+    }
+    .btn-close {
+      background: transparent;
+    }
+    .modal-header {
+      border-bottom: 2px solid #021521;
+      padding: 1.6rem;
+    }
+    .modal-body {
+      .price_box {
+        display: flex;
+        align-items: center;
+        padding: 1.125em 1em;
+        border-radius: 10px;
+        background-color: #021521;
+      }
+      .modal_control {
+        display: flex;
+
+        button {
+          border-color: #c2d2e0;
+          background-color: #c2d2e0;
+          color: #93a3af;
+          display: inline-block;
+          font-size: 1.25em;
+          border-radius: 6px;
+          border: none;
+          outline: none;
+          width: 50%;
+          box-shadow: none;
+          padding: 0.5rem;
+          transition: .5s;
+          &.disabled {
+            opacity: 0.65;
+            pointer-events: none;
+          }
+          &.btn_cancel {
+            background: transparent;
+            &:focus,
+            &:active {
+              box-shadow: 0 0 0 0.2rem rgba(207, 192, 110, 0.5);
+              color: #212529;
+              background-color: #e8cf4d;
+              border-color: #e7cc41;
+            }
+          }
+        }
+      }
+    }
+  }
+}
