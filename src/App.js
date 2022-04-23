@@ -10,6 +10,7 @@ import Base from "./Layout/Base/Base";
 // ..............Pages ................
 import Marketplace from "./Pages/Marketplace/Marketplace";
 import Staking from "./Pages/Staking/Staking";
+import EggSell from "./Pages/EggSell/EggSell";
 // ..............Pages ................End
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
             <Route exact={true} path="/" element={<Marketplace />}>
             </Route>
             <Route path="/staking" element={<Staking />}>
+            </Route>
+            <Route path="/egg_sell" element={<EggSell />}>
             </Route>
           </Routes>
         </Base>
