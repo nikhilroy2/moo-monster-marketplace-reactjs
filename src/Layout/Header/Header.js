@@ -1,36 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-router-dom";
 
 function Header(props) {
+  const [pathName, setPathName] = useState("/");
+  useEffect(() => {
+    setPathName(window.location.pathname);
+  }, [pathName]);
+
   const nav_item_list = [
     {
       id: 1,
       name: "Marketplace",
-      link: "Marketplace",
+      link: "/",
       activeClass: "",
     },
     {
       id: 2,
       name: "Staking",
-      link: "nft",
+      link: "/Staking",
       activeClass: "",
     },
     {
       id: 3,
       name: "Egg Sell ",
-      link: "gameplay",
+      link: "/egg_sell",
       activeClass: "",
     },
   ];
+
   return (
     <header id="Header">
       <div className="container">
@@ -79,14 +77,11 @@ function Header(props) {
                   return (
                     <li className="nav-item" key={v.id}>
                       <Link
-                        activeClass="active_nav_action"
-                        className={`nav-link nav_action_link`}
+                        // activeClass="active_nav_action"
+                        className={`nav-link nav_action_link ${
+                          pathName === v.link ? "active_nav_action" : ""
+                        }`}
                         to={v.link}
-                        target={v.name === "Whitepaper" ? "_blank" : "_self"}
-                        smooth={true}
-                        duration={1}
-                        spy={true}
-                        style={{ cursor: "pointer" }}
                       >
                         {v.name}
                       </Link>

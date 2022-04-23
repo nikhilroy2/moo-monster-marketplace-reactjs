@@ -1,9 +1,9 @@
 export const MarketPlaceCardObject = [
   {
     id: 1,
-    head_img: require("../Static/img/1.06e4af1.png"),
-    head_full_img: require("../Static/img/sign-card-dark.5ea265a.png"),
-    head_content_img: require("../Static/img/label-level-dark.3477e2a.png"),
+    head_img: require("../../Static/img/1.06e4af1.png"),
+    head_full_img: require("../../Static/img/sign-card-dark.5ea265a.png"),
+    head_content_img: require("../../Static/img/label-level-dark.3477e2a.png"),
     head_border: "#3b2e4e",
     Lv: 8,
     head_top_svg: (
@@ -113,9 +113,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 2,
-    head_img: require("../Static/img/2.e643d1f.png"),
-    head_full_img: require("../Static/img/sign-card-water.001ae10.png"),
-    head_content_img: require("../Static/img/label-level-water.0ed99f5.png"),
+    head_img: require("../../Static/img/2.e643d1f.png"),
+    head_full_img: require("../../Static/img/sign-card-water.001ae10.png"),
+    head_content_img: require("../../Static/img/label-level-water.0ed99f5.png"),
     head_border: "#374683",
     Lv: 15,
     head_top_svg: (
@@ -226,9 +226,9 @@ export const MarketPlaceCardObject = [
 
   {
     id: 3,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -339,9 +339,9 @@ export const MarketPlaceCardObject = [
 
   {
     id: 4,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -451,9 +451,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 5,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -563,9 +563,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 6,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -675,9 +675,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 7,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -787,9 +787,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 8,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -899,9 +899,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 9,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -1011,9 +1011,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 10,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -1123,9 +1123,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 11,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
@@ -1235,9 +1235,9 @@ export const MarketPlaceCardObject = [
   },
   {
     id: 12,
-    head_img: require("../Static/img/2.559569a.png"),
-    head_full_img: require("../Static/img/sign-card-earth.48d946c.png"),
-    head_content_img: require("../Static/img/label-level-earth.973526a.png"),
+    head_img: require("../../Static/img/2.559569a.png"),
+    head_full_img: require("../../Static/img/sign-card-earth.48d946c.png"),
+    head_content_img: require("../../Static/img/label-level-earth.973526a.png"),
     head_border: "#52433a",
     Lv: 10,
     head_top_svg: (
