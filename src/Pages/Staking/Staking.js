@@ -117,7 +117,7 @@ const RewardSummary = () => {
                         </small>
                       </li>
                     </ul>
-                    <button className="w-100 connect_btn btn_primary p-3 py-md-4 border-0 outline-0">
+                    <button data-mdb-toggle="modal" data-mdb-target="#wallet_open_modal" className="w-100 connect_btn btn_primary p-3 py-md-4 border-0 outline-0">
                       Connect Wallet
                     </button>
                   </div>
