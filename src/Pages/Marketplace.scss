@@ -2,5 +2,151 @@
   .box_content {
     background: url("../Static/img/bg-marketplace-info.58496b5.png") center/100%
       100% no-repeat;
+    .box_content_body {
+      & > .box {
+        background: #021521;
+        margin: 4px 2px;
+        border-radius: 16px;
+        padding: 1em 1.25em;
+      }
+      .box_title {
+        font-size: 1.125em;
+      }
+      .box_subtitle {
+        font-size: 2.25em;
+        min-width: 20rem;
+        display: block;
+      }
+    }
+  }
+  #MarketplaceItems {
+    .items_wrapper {
+      background: #13212f;
+      padding: 1.875em 2em 2.5em;
+      border-radius: 16px;
+      .items_head {
+        .items_title {
+          font-size: 1.25em;
+          font-weight: 700;
+        }
+        .items_filter {
+          .filter_group {
+            .select_filter {
+              background: #021521;
+              min-width: 10rem;
+              text-align: center;
+              padding: 0.375em 0.75em;
+              color: #93a3af;
+              border: 2px solid #184867;
+              cursor: pointer;
+              border-radius: 10px;
+              &:focus {
+                border-color: #3090ce;
+                outline: 0;
+                box-shadow: 0 0 0 0.2rem rgba(24, 72, 103, 0.25);
+              }
+            }
+          }
+        }
+      }
+      .items_body {
+        #MarketplaceItemsCard {
+          width: 18rem;
+          cursor: pointer;
+          background: #021521;
+          padding: 0px;
+          border-radius: 1.8rem;
+          .card_head {
+            width: 100%;
+            border-radius: 1.8rem;
+            height: 25rem;
+            border: 5px solid var(--border-color);
+
+            position: relative;
+            .head_img {
+              height: 100%;
+            }
+            .head_content {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              display: flex;
+              align-items: flex-end;
+              .content_1 {
+                width: 64.6px;
+                height: 35px;
+                font-size: 1.6rem;
+                color: var(--text-white);
+                display: flex;
+                align-items: center;
+                padding: 0.5rem;
+                .name {
+                  font-size: 1.6rem;
+                  margin-top: 1rem;
+                  margin-right: 0.3rem;
+                  font-weight: bold;
+                }
+                .count {
+                  font-size: 3.2rem;
+                  font-weight: bold;
+                }
+              }
+              .content_2 {
+                .content_2_rating {
+                  svg {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                  }
+                }
+              }
+            }
+          }
+          .card_body {
+            name {
+              font-size: 1.6rem;
+              font-weight: bold;
+            }
+            .value {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    .page-link {
+      font-size: 1.8rem;
+      border-radius: 0.6rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      font-weight: 700;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      &:not(.paginate_control) {
+        background: #021521 !important;
+        color: #5b89a7!important;
+        border: 2px solid #184867;
+        font-size: 1.4rem;
+      }
+      &.prev_disable,
+      &.next_disable {
+        color: #184867 !important;
+        pointer-events: none;
+        user-select: none;
+        background: transparent;
+      }
+      &.active_link {
+        color: #eedb7a !important;
+        border-color: #eedb7a !important;
+        background: #184867!important;
+      }
+      &.paginate_control {
+        background: transparent!important;
+      }
+    }
   }
 }

@@ -8,7 +8,9 @@
   font-family: hubby_bunny;
   src: url("./Static/fonts/HUBBY_BUNNY.ttf");
 }
-
+.family_bunny{
+  font-family: hubby_bunny;
+}
 :root {
   // default font for rem
   font-size: 10px;
@@ -73,8 +75,8 @@ section {
     color: var(--text-7a);
     font-size: 4rem;
     font-weight: 700;
-    &.font_2 {
-      font-size: 2rem;
+    &.font_32 {
+      font-size: 3.2rem;
     }
     @media (max-width: 600px) {
       font-size: 3rem;

@@ -1,4 +1,167 @@
 #MarketplaceBox .box_content {
   background: url("../Static/img/bg-marketplace-info.58496b5.png") center/100% 100% no-repeat;
 }
+
+#MarketplaceBox .box_content .box_content_body > .box {
+  background: #021521;
+  margin: 4px 2px;
+  border-radius: 16px;
+  padding: 1em 1.25em;
+}
+
+#MarketplaceBox .box_content .box_content_body .box_title {
+  font-size: 1.125em;
+}
+
+#MarketplaceBox .box_content .box_content_body .box_subtitle {
+  font-size: 2.25em;
+  min-width: 20rem;
+  display: block;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper {
+  background: #13212f;
+  padding: 1.875em 2em 2.5em;
+  border-radius: 16px;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_head .items_title {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_head .items_filter .filter_group .select_filter {
+  background: #021521;
+  min-width: 10rem;
+  text-align: center;
+  padding: 0.375em 0.75em;
+  color: #93a3af;
+  border: 2px solid #184867;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_head .items_filter .filter_group .select_filter:focus {
+  border-color: #3090ce;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 72, 103, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(24, 72, 103, 0.25);
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard {
+  width: 18rem;
+  cursor: pointer;
+  background: #021521;
+  padding: 0px;
+  border-radius: 1.8rem;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_head {
+  width: 100%;
+  border-radius: 1.8rem;
+  height: 25rem;
+  border: 5px solid var(--border-color);
+  position: relative;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_head .head_img {
+  height: 100%;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_head .head_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_head .head_content .content_1 {
+  width: 64.6px;
+  height: 35px;
+  font-size: 1.6rem;
+  color: var(--text-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_head .head_content .content_1 .name {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-right: 0.3rem;
+  font-weight: bold;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_head .head_content .content_1 .count {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_head .head_content .content_2 .content_2_rating svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_body name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#MarketplaceBox #MarketplaceItems .items_wrapper .items_body #MarketplaceItemsCard .card_body .value {
+  font-size: 1.2rem;
+}
+
+#MarketplaceBox .pagination .page-link {
+  font-size: 1.8rem;
+  border-radius: 0.6rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#MarketplaceBox .pagination .page-link:not(.paginate_control) {
+  background: #021521 !important;
+  color: #5b89a7 !important;
+  border: 2px solid #184867;
+  font-size: 1.4rem;
+}
+
+#MarketplaceBox .pagination .page-link.prev_disable, #MarketplaceBox .pagination .page-link.next_disable {
+  color: #184867 !important;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: transparent;
+}
+
+#MarketplaceBox .pagination .page-link.active_link {
+  color: #eedb7a !important;
+  border-color: #eedb7a !important;
+  background: #184867 !important;
+}
+
+#MarketplaceBox .pagination .page-link.paginate_control {
+  background: transparent !important;
+}
 /*# sourceMappingURL=Marketplace.css.map */

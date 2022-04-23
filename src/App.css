@@ -9,6 +9,10 @@
   src: url("./Static/fonts/HUBBY_BUNNY.ttf");
 }
 
+.family_bunny {
+  font-family: hubby_bunny;
+}
+
 :root {
   font-size: 10px;
   --text-white: #fff;
@@ -74,8 +78,8 @@ section .title_secondary {
   font-weight: 700;
 }
 
-section .title_secondary.font_2 {
-  font-size: 2rem;
+section .title_secondary.font_32 {
+  font-size: 3.2rem;
 }
 
 @media (max-width: 600px) {
