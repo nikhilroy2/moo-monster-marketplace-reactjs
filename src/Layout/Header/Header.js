@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Header(props) {
   const [pathName, setPathName] = useState("/");
@@ -37,7 +37,7 @@ function Header(props) {
           {/* Container wrapper */}
           <div className="container-fluid">
             {/* Navbar brand */}
-            <a className="navbar-brand me-2" href="#">
+            <Link className="navbar-brand me-2" to="/">
               <img
                 src={require("../../Static/img/moo-brand-2.e4f7641.png")}
                 height={16}
@@ -45,7 +45,8 @@ function Header(props) {
                 loading="lazy"
                 style={{ height: "32px" }}
               />
-            </a>
+            </Link>
+
             {/* Toggle button */}
             <div className="d-flex align-items-center">
               <div className="d-flex align-items-center d-lg-none me-3">
@@ -96,7 +97,12 @@ function Header(props) {
                   );
                 })}
                 <li className="nav-item d-lg-none">
-                  <button data-mdb-toggle="modal" data-mdb-target="#buy_moo_open_modal" type="button" className="btn_app">
+                  <button
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#buy_moo_open_modal"
+                    type="button"
+                    className="btn_app"
+                  >
                     <img
                       style={{ height: "24px" }}
                       src={require("../../Static/img/ic-moo-token.8d1a1ee.png")}
@@ -108,7 +114,12 @@ function Header(props) {
               </ul>
               {/* Left links */}
               <div className="d-none align-items-center d-lg-flex">
-                <button data-mdb-toggle="modal" data-mdb-target="#buy_moo_open_modal" type="button" className="btn_app d-none d-lg-block">
+                <button
+                  data-mdb-toggle="modal"
+                  data-mdb-target="#buy_moo_open_modal"
+                  type="button"
+                  className="btn_app d-none d-lg-block"
+                >
                   <img
                     style={{ height: "24px" }}
                     src={require("../../Static/img/ic-moo-token.8d1a1ee.png")}
