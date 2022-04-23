@@ -74,6 +74,10 @@ section .title_secondary {
   font-weight: 700;
 }
 
+section .title_secondary.font_2 {
+  font-size: 2rem;
+}
+
 @media (max-width: 600px) {
   section .title_secondary {
     font-size: 3rem;

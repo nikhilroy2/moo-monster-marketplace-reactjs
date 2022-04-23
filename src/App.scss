@@ -73,6 +73,9 @@ section {
     color: var(--text-7a);
     font-size: 4rem;
     font-weight: 700;
+    &.font_2 {
+      font-size: 2rem;
+    }
     @media (max-width: 600px) {
       font-size: 3rem;
     }

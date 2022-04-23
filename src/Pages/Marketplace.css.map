@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,eADa,CACb,YAAY,CAAC;EACX,UAAU,EAAE,oDAAoD,CAAC,WAAW,CAC1E,IAAI,CAAC,SAAS;CACjB",
+    "sources": [
+        "Marketplace.scss"
+    ],
+    "names": [],
+    "file": "Marketplace.css"
+}
