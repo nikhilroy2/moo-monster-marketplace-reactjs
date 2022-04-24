@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./Marketplace.css";
 import { MarketPlaceCardObject } from "./MarketPlaceCardObject";
 import { MarketplaceItemsCard } from "../../Components/MarketplaceItemsCard/MarketplaceItemsCard";
+
+import ReactStars from "react-rating-stars-component";
+
 function Marketplace(props) {
   return (
     <div id="Marketplace">
@@ -68,12 +71,12 @@ const MarketplaceBox = () => {
 const MarketplaceItems = () => {
   //console.log(MarketPlaceCardObject)
   return (
-    <div id="MarketplaceItems">
+    <div id="MarketplaceItems" className="mb-5 pb-5">
       <div className="container">
         <div className="row">
           <div className="col-12 d-lg-flex">
             <MarketPlaceFilter></MarketPlaceFilter>
-            <div className="items_wrapper mb-3 mb-md-5">
+            <div className="items_wrapper mt-5 mt-lg-0 mb-3 mb-md-5">
               <div className="items_head mb-3 mb-md-5">
                 <div className="items_control d-flex flex-wrap justify-content-between">
                   <div className="items_title mb-3">
@@ -215,6 +218,7 @@ const MarketPlaceFilter = () => {
   // busd show filter
   const [busdShow, setBusdShow] = useState(false);
 
+  const ratingChanged = (data) => console.log(data);
   return (
     <div id="MarketPlaceFilter" className="me-4">
       <div className="filter_wrapper">
@@ -264,7 +268,8 @@ const MarketPlaceFilter = () => {
               <input
                 type="checkbox"
                 className="d-none"
-                name="busdShow"  defaultChecked={!busdShow}
+                name="busdShow"
+                defaultChecked={!busdShow}
                 id="busdShow"
                 onChange={() => setBusdShow(!busdShow)}
               />
@@ -277,8 +282,6 @@ const MarketPlaceFilter = () => {
                 BUSD
               </label>
             </div>
-
-            
           </div>
 
           <div className="form-group mt-4">
@@ -288,9 +291,302 @@ const MarketPlaceFilter = () => {
             </div>
           </div>
 
+          <div className="d-flex flex-wrap mt-4">
+            <div className="nft_sm_box active_box me-2">
+              <img src={require("../../Static/img/nft_icon.png")} alt="img" />
+              <span>Moo</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img src={require("../../Static/img/egg_icon.png")} alt="img" />
+              <span>Egg</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img src={require("../../Static/img/card_icon.png")} alt="img" />
+              <span>Card</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img src={require("../../Static/img/card_icon.png")} alt="img" />
+              <span>Card Pack</span>
+            </div>
+
+            <div className="nft_sm_box  ">
+              <img src={require("../../Static/img/ticket.png")} alt="img" />
+              <span>Ticket</span>
+            </div>
+          </div>
         </div>
-        <div className="filter_body"></div>
-        <div className="filter_foot"></div>
+        <div className="filter_body">
+          <div className="d-flex flex-wrap">
+            <div className="nft_sm_box ">
+              <img src={require("../../Static/img/jigsaw.png")} alt="img" />
+              <span>Jigsaw</span>
+            </div>
+          </div>
+
+          <div className="form-group mt-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <span className="text-white">Element</span>
+              <button className="clear_btn">clear</button>
+            </div>
+          </div>
+
+          <div className="d-flex flex-wrap mt-4">
+            <div className="nft_sm_box active_box me-2">
+              <img
+                style={{
+                  background: "linear-gradient(180deg,#3d2f29,#855f36)",
+                }}
+                src={require("../../Static/img/icon-element-earth.d05d1b5.png")}
+                alt="img"
+              />
+              <span>Earth</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img
+                style={{
+                  background: "linear-gradient(180deg,#150cd4,#01b5fe)",
+                }}
+                src={require("../../Static/img/icon-element-water.39e8cd3.png")}
+                alt="img"
+              />
+              <span>Water</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img
+                style={{
+                  background: "linear-gradient(180deg,#ff1c1c,#ee900d)",
+                }}
+                src={require("../../Static/img/icon-element-fire.77b8610.png")}
+                alt="img"
+              />
+              <span>Fire</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img
+                style={{
+                  background: "linear-gradient(180deg,#ffa325,#f4d90b)",
+                }}
+                src={require("../../Static/img/icon-element-light.30f51a2.png")}
+                alt="img"
+              />
+              <span>Light</span>
+            </div>
+
+            <div className="nft_sm_box  ">
+              <img
+                style={{
+                  background: "linear-gradient(180deg,#070014,#440090)",
+                }}
+                src={require("../../Static/img/icon-element-dark.85fdcd1.png")}
+                alt="img"
+              />
+              <span>Dark</span>
+            </div>
+          </div>
+
+          <div className="form-group mt-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <span className="text-white">Character</span>
+              <button className="clear_btn">clear</button>
+            </div>
+          </div>
+
+          <div className="d-flex flex-wrap mt-4">
+            <div className="nft_sm_box active_box me-2">
+              <img src={require("../../Static/img/1.e6f0131.png")} alt="img" />
+              <span>D-Bolt</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img src={require("../../Static/img/1.04dc6c6.png")} alt="img" />
+              <span>Lava</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img src={require("../../Static/img/1.06e4af1.png")} alt="img" />
+              <span>Richie</span>
+            </div>
+
+            <div className="nft_sm_box  me-2">
+              <img src={require("../../Static/img/1.84b2eb4.png")} alt="img" />
+              <span>Varlo</span>
+            </div>
+
+            <div className="nft_sm_box  ">
+              <img src={require("../../Static/img/1.5d38825.png")} alt="img" />
+              <span>Relias</span>
+            </div>
+
+            <div className="nft_sm_box  me-2 ">
+              <img src={require("../../Static/img/1.a5572b9.png")} alt="img" />
+              <span>Freezy</span>
+            </div>
+
+            <div className="nft_sm_box  ">
+              <img src={require("../../Static/img/1.696104b.png")} alt="img" />
+              <span>Ace</span>
+            </div>
+          </div>
+
+          <div className="form-group mt-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <span className="text-white">Evolution Tier</span>
+              <button className="clear_btn">clear</button>
+            </div>
+          </div>
+
+          <div className="d-flex align-items-center flex-wrap">
+            <div className="form-group mt-2 me-4">
+              <input
+                type="checkbox"
+                className="d-none"
+                name="Baby_I"
+                id="Baby_I"
+              />
+              <label htmlFor="Baby_I" className="toggle_label family_bunny">
+                Baby I
+              </label>
+            </div>
+
+            <div className="form-group mt-2 me-4">
+              <input
+                type="checkbox"
+                className="d-none"
+                name="Baby_II"
+                id="Baby_II"
+              />
+              <label htmlFor="Baby_II" className="toggle_label family_bunny">
+                Baby II
+              </label>
+            </div>
+
+            <div className="form-group mt-2 me-4">
+              <input
+                type="checkbox"
+                className="d-none"
+                name="Rookie"
+                id="Rookie"
+              />
+              <label htmlFor="Rookie" className="toggle_label family_bunny">
+                Rookie
+              </label>
+            </div>
+
+            <div className="form-group mt-2 me-4">
+              <input
+                type="checkbox"
+                className="d-none"
+                name="Champion"
+                id="Champion"
+              />
+              <label htmlFor="Champion" className="toggle_label family_bunny">
+                Champion
+              </label>
+            </div>
+
+            <div className="form-group mt-2 me-4">
+              <input
+                type="checkbox"
+                className="d-none"
+                name="Ultimate"
+                id="Ultimate"
+              />
+              <label htmlFor="Ultimate" className="toggle_label family_bunny">
+                Ultimate
+              </label>
+            </div>
+
+            <div className="form-group mt-2 me-4">
+              <input type="checkbox" className="d-none" name="Mega" id="Mega" />
+              <label htmlFor="Mega" className="toggle_label family_bunny">
+                Mega
+              </label>
+            </div>
+
+            <div className="form-group mt-2 me-4">
+              <input
+                type="checkbox"
+                className="d-none"
+                name="Heroic"
+                id="Heroic"
+              />
+              <label htmlFor="Heroic" className="toggle_label family_bunny">
+                Heroic
+              </label>
+            </div>
+          </div>
+
+          <div className="form-group mt-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <span className="text-white">Character Stats</span>
+              <button className="clear_btn">clear</button>
+            </div>
+          </div>
+
+          <div className="form-group mt-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <span className="text-white">Rarity</span>
+              <button className="clear_btn">clear</button>
+            </div>
+          </div>
+
+          <div className="form-group mt-2">
+            <ReactStars
+              count={5}
+              onChange={ratingChanged}
+              size={24}
+              activeColor="#ffd700"
+            />
+          </div>
+
+          <div className="form-group mt-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <span className="text-white">Price Range</span>
+              <button className="clear_btn">clear</button>
+            </div>
+          </div>
+
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="form-group mt-4">
+              <input
+                type="text"
+                placeholder="From"
+                className="form-control custom_input sm_input"
+              />
+            </div>
+            <span className="text_9a mt-4">-</span>
+            <div className="form-group mt-4">
+              <input
+                type="text"
+                placeholder="To"
+                className="form-control custom_input sm_input"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="filter_foot pb-5">
+          <div className="form-group mt-4 position-relative">
+            <i
+              className="fas fa-search  position-absolute  text_9a "
+              style={{
+                top: "50%",
+                transform: "translateY(-50%)",
+                left: "10px",
+              }}
+            ></i>
+            <input
+              type="text"
+              placeholder="Search by token ID"
+              className="form-control custom_input ps-5 "
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
