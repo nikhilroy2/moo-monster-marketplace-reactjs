@@ -1,7 +1,7 @@
 #MarketplaceBox {
   .box_content {
-    background: url("../../Static/img/bg-marketplace-info.58496b5.png") center/100%
-      100% no-repeat;
+    background: url("../../Static/img/bg-marketplace-info.58496b5.png")
+      center/100% 100% no-repeat;
     .box_content_body {
       & > .box {
         background: #021521;
@@ -19,16 +19,71 @@
       }
     }
   }
+
+  @mixin toggle_label() {
+    .toggle_label {
+      font-size: 0.8125em;
+      color: #5b89a7;
+      cursor: pointer;
+      position: relative;
+      margin-left: 2rem;
+      user-select: none;
+      &::before {
+        position: absolute;
+        top: 0.25em;
+        left: -1.5em;
+        display: block;
+        width: 1em;
+        height: 1em;
+        content: "";
+        pointer-events: none;
+        background-color: #fff;
+        border: 1px solid #adb5bd;
+        border-radius: 3px;
+      }
+    }
+    input[type="checkbox"]:checked ~ .toggle_label {
+      color: #eedb7a;
+      &::before {
+        position: absolute;
+        top: 0.25em;
+        left: -1.5em;
+        display: block;
+        width: 1em;
+        height: 1em;
+        content: "";
+        border-color: #eedb7a !important;
+        background-color: #eedb7a;
+        border-radius: 3px;
+      }
+      &::after {
+        position: absolute;
+        top: 0.25em;
+        left: -1.45em;
+        display: block;
+        width: 1em;
+        height: 1em;
+        content: "";
+        background: url("../../Static/img/checkbox_bg.png") center/8px 8px
+          no-repeat;
+      }
+      &.active_label {
+        color: #eedb7a !important;
+      }
+    }
+  }
   #MarketplaceItems {
     .items_wrapper {
       background: #13212f;
       padding: 1.875em 2em 2.5em;
       border-radius: 16px;
+
       .items_head {
         .items_title {
           font-size: 1.25em;
           font-weight: 700;
         }
+
         .items_filter {
           .filter_group {
             .select_filter {
@@ -50,7 +105,37 @@
         }
       }
       .items_body {
-        
+      }
+    }
+    #MarketPlaceFilter {
+      background: #13212f;
+      padding: 1.875em 2em 2.5em;
+      border-radius: 16px;
+      min-width: 320px;
+
+      .clear_btn {
+        padding: 0px 10px;
+        font-size: 12px;
+        border-radius: 50px;
+        color: #e86161;
+        border: 1px solid #e86161;
+        background: transparent;
+        transition: 0.5s;
+        outline: none;
+        &:hover,
+        &:active {
+          background: #e86161;
+          color: white;
+          box-shadow: 0 0 0 0.2rem rgba(232, 97, 97, 0.5);
+        }
+      }
+      .filter_head {
+        @include toggle_label();
+        .form-group {
+          * {
+            font-family: hubby_bunny;
+          }
+        }
       }
     }
   }
@@ -67,7 +152,7 @@
       align-items: center;
       &:not(.paginate_control) {
         background: #021521 !important;
-        color: #5b89a7!important;
+        color: #5b89a7 !important;
         border: 2px solid #184867;
         font-size: 1.4rem;
       }
@@ -81,10 +166,10 @@
       &.active_link {
         color: #eedb7a !important;
         border-color: #eedb7a !important;
-        background: #184867!important;
+        background: #184867 !important;
       }
       &.paginate_control {
-        background: transparent!important;
+        background: transparent !important;
       }
     }
   }

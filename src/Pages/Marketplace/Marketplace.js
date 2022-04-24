@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Marketplace.css";
 import { MarketPlaceCardObject } from "./MarketPlaceCardObject";
 import { MarketplaceItemsCard } from "../../Components/MarketplaceItemsCard/MarketplaceItemsCard";
@@ -59,6 +59,7 @@ const MarketplaceBox = () => {
           </div>
         </div>
       </div>
+
       <MarketplaceItems></MarketplaceItems>
     </div>
   );
@@ -70,7 +71,8 @@ const MarketplaceItems = () => {
     <div id="MarketplaceItems">
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 d-lg-flex">
+            <MarketPlaceFilter></MarketPlaceFilter>
             <div className="items_wrapper mb-3 mb-md-5">
               <div className="items_head mb-3 mb-md-5">
                 <div className="items_control d-flex flex-wrap justify-content-between">
@@ -114,12 +116,12 @@ const MarketplaceItems = () => {
               </div>
               <div className="items_body">
                 <div className="row justify-content-center">
-                  <div className="col-xxl-9">
+                  <div className="col-12">
                     <div className="row g-2 justify-content-center justify-content-md-start">
                       {MarketPlaceCardObject.map((v) => {
                         return (
                           <div
-                            className="col-sm-6 col-md-4 col-lg-3 "
+                            className="col-sm-6 col-md-4 col-lg-4 col-xxl-3 "
                             key={v.id}
                           >
                             <div className="col_wrapper">
@@ -202,3 +204,84 @@ const MarketplaceItems = () => {
   );
 };
 
+const MarketPlaceFilter = () => {
+  // show nft filter
+  const [showNft, setShowNft] = useState(false);
+  //console.log(showNft)
+
+  // moo show filter
+  const [mooShow, setMooShow] = useState(false);
+
+  // busd show filter
+  const [busdShow, setBusdShow] = useState(false);
+
+  return (
+    <div id="MarketPlaceFilter" className="me-4">
+      <div className="filter_wrapper">
+        <div className="filter_head">
+          <h2 className="title_secondary font_32 text-start">Filters</h2>
+
+          <div className="form-group">
+            <input
+              type="checkbox"
+              className="d-none"
+              name="show_nft"
+              id="show_nft"
+              onChange={() => setShowNft(!showNft)}
+            />
+            <label htmlFor="show_nft" className="toggle_label family_bunny">
+              Show only my NFTs on sell
+            </label>
+          </div>
+
+          <div className="form-group mt-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <span className="text-white">Currency</span>
+              <button className="clear_btn">clear</button>
+            </div>
+          </div>
+
+          <div className="d-flex align-items-center flex-wrap">
+            <div className="form-group mt-2 me-4">
+              <input
+                type="checkbox"
+                className="d-none"
+                name="mooShow"
+                id="mooShow"
+                onChange={() => setMooShow(!mooShow)}
+              />
+              <label htmlFor="mooShow" className="toggle_label family_bunny">
+                <img
+                  style={{ height: "15px" }}
+                  src={require("../../Static/img/ic-moo-token.8d1a1ee.png")}
+                  alt=""
+                />{" "}
+                MOO
+              </label>
+            </div>
+
+            <div className="form-group mt-2">
+              <input
+                type="checkbox"
+                className="d-none"
+                name="busdShow"  defaultChecked={!busdShow}
+                id="busdShow"
+                onChange={() => setBusdShow(!busdShow)}
+              />
+              <label htmlFor="busdShow" className="toggle_label family_bunny">
+                <img
+                  style={{ height: "15px" }}
+                  src={require("../../Static/img/ic-busd-token.454c7c3.png")}
+                  alt=""
+                />{" "}
+                BUSD
+              </label>
+            </div>
+          </div>
+        </div>
+        <div className="filter_body"></div>
+        <div className="filter_foot"></div>
+      </div>
+    </div>
+  );
+};

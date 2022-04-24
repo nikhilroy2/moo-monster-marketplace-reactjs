@@ -48,6 +48,94 @@
           box-shadow: 0 0 0 0.2rem rgba(24, 72, 103, 0.25);
 }
 
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter {
+  background: #13212f;
+  padding: 1.875em 2em 2.5em;
+  border-radius: 16px;
+  min-width: 320px;
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .clear_btn {
+  padding: 0px 10px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #e86161;
+  border: 1px solid #e86161;
+  background: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .clear_btn:hover, #MarketplaceBox #MarketplaceItems #MarketPlaceFilter .clear_btn:active {
+  background: #e86161;
+  color: white;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(232, 97, 97, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(232, 97, 97, 0.5);
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .filter_head .toggle_label {
+  font-size: 0.8125em;
+  color: #5b89a7;
+  cursor: pointer;
+  position: relative;
+  margin-left: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .filter_head .toggle_label::before {
+  position: absolute;
+  top: 0.25em;
+  left: -1.5em;
+  display: block;
+  width: 1em;
+  height: 1em;
+  content: "";
+  pointer-events: none;
+  background-color: #fff;
+  border: 1px solid #adb5bd;
+  border-radius: 3px;
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .filter_head input[type="checkbox"]:checked ~ .toggle_label {
+  color: #eedb7a;
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .filter_head input[type="checkbox"]:checked ~ .toggle_label::before {
+  position: absolute;
+  top: 0.25em;
+  left: -1.5em;
+  display: block;
+  width: 1em;
+  height: 1em;
+  content: "";
+  border-color: #eedb7a !important;
+  background-color: #eedb7a;
+  border-radius: 3px;
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .filter_head input[type="checkbox"]:checked ~ .toggle_label::after {
+  position: absolute;
+  top: 0.25em;
+  left: -1.45em;
+  display: block;
+  width: 1em;
+  height: 1em;
+  content: "";
+  background: url("../../Static/img/checkbox_bg.png") center/8px 8px no-repeat;
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .filter_head input[type="checkbox"]:checked ~ .toggle_label.active_label {
+  color: #eedb7a !important;
+}
+
+#MarketplaceBox #MarketplaceItems #MarketPlaceFilter .filter_head .form-group * {
+  font-family: hubby_bunny;
+}
+
 #MarketplaceBox .pagination .page-link {
   font-size: 1.8rem;
   border-radius: 0.6rem;

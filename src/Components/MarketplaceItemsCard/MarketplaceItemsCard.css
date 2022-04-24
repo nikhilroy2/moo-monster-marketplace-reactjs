@@ -1,5 +1,5 @@
 #MarketplaceItemsCard {
-  width: 18rem;
+  width: 16rem;
   cursor: pointer;
   background: #021521;
   padding: 0px;
@@ -17,6 +17,9 @@
 
 #MarketplaceItemsCard .card_head .head_img {
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #MarketplaceItemsCard .card_head .head_content {
@@ -59,8 +62,9 @@
 }
 
 #MarketplaceItemsCard .card_head .head_content .content_2 .content_2_rating svg {
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 2px;
 }
 
 #MarketplaceItemsCard .card_body name {
