@@ -277,7 +277,17 @@ const MarketPlaceFilter = () => {
                 BUSD
               </label>
             </div>
+
+            
           </div>
+
+          <div className="form-group mt-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <span className="text-white">NFT</span>
+              <button className="clear_btn">clear</button>
+            </div>
+          </div>
+
         </div>
         <div className="filter_body"></div>
         <div className="filter_foot"></div>
